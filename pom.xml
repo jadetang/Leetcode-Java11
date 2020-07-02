@@ -31,7 +31,6 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
             <version>${junit.jupiter.version}</version>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 
@@ -51,6 +50,11 @@
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven.surefire.plugin.version}</version>
+                <configuration>
+                    <testSourceDirectory>${basedir}/src/main/java/</testSourceDirectory>
+                    <testClassesDirectory>${project.build.directory}/classes/</testClassesDirectory>
+                    <includes>**/*.java</includes>
+                </configuration>
             </plugin>
         </plugins>
     </build>
