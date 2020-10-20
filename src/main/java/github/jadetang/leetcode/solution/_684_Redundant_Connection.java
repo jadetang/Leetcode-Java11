@@ -11,7 +11,7 @@ public class _684_Redundant_Connection {
         assertArrayEquals(new int[]{2, 3}, findRedundantConnection(new int[][]{{1, 2}, {1, 3}, {2, 3}}));
     }
 
-    public int[] findRedundantDirectedConnection(int[][] edges) {
+    public int[] findRedundantConnection(int[][] edges) {
         int n = edges.length;
         UnionFind uf = new UnionFind(n);
         int[] ans = null;

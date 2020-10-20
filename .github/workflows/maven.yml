@@ -19,4 +19,4 @@ jobs:
       with:
         java-version: 11
     - name: Build with Maven
-      run: mvn clean test
+      run: mvn clean _1621_Number_of_Sets_of_K_Non_Overlapping_Line_Segments
