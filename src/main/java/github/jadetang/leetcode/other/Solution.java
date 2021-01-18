@@ -79,6 +79,16 @@ class Solution {
         return rowValid & colValid;
     }
 
+    public static void main(String[] args) {
+        Solution s = new Solution();
+        System.out.println(System.identityHashCode(s));
+        System.out.println(s.hashCode());
+        test(s);
+    }
 
+    static void test(Solution s) {
+        System.out.println(System.identityHashCode(s));
+        System.out.println(s.hashCode());
+    }
 
 }
